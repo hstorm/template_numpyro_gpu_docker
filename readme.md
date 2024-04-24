@@ -1,8 +1,10 @@
 # This repository is a template for running NumPyro on GPU using JAX in a vs code devcontainer
 
-1. Either that this repository as a stating point or copy the `.devcontainer` folder, the Dockerfile, the  `requirements.txt` and the `text.py` file to your project.
+The docker image contains preinstalled  CUDA Toolkit and NVIDIA cuDNN. This should make it easier to run NumPyro on GPU and avoid one shared CUDA installation.  
 
-2. Adjust the `requirements.txt` file to your needs. Note that this template does using conda or pipenv. Instead plain pip is used to install the packages. You can also install pip later on to install additional packages, but remember to update the `requirements.txt` file, otherwise those install will be lost when the container is rebuild.
+1. Either use this repository as a stating point or copy the `.devcontainer` folder, the Dockerfile, the  `requirements.txt` and the `text.py` file to your project.
+
+2. Adjust the `requirements.txt` file to your needs. Note that this template does not use conda or pipenv. Instead plain pip is used to install packages. When you `pip install`  additional packages later, remember to update the `requirements.txt` file accordingly, otherwise these packages will be lost when the container is rebuild.
 
 3. Open the project in VS Code and hit `Ctrl+Shift+P` and select `Remote-Containers: Reopen in Container`
 
