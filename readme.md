@@ -6,7 +6,8 @@ The docker image contains preinstalled  CUDA Toolkit and NVIDIA cuDNN. This shou
 
 2. Adjust the `requirements.txt` file to your needs. Note that this template does not use conda or pipenv. Instead plain pip is used to install packages. When you `pip install`  additional packages later, remember to update the `requirements.txt` file accordingly, otherwise these packages will be lost when the container is rebuild.
 
-3. Open the project in VS Code and hit `Ctrl+Shift+P` and select `Remote-Containers: Reopen in Container`
+3. Open the project in VS Code and hit `Ctrl+Shift+P` and select `Dev Containers: Reopen in Container`.
+Note: For this to work you user needs to be in the docker user group (`sudo usermod -a -G docker USERNAME`)
 
 # Notes
 Choice other docker image 
