@@ -14,6 +14,8 @@ Note: For this to work you user needs to be in the docker user group (`sudo user
 
 4. Test the installation by running `python src/test_numpyro.py` or `python src/test_gpjax_numpyro.py`. You should see that the code is running on GPU. For this connect to the server used SSH (without an development container) and run `watch -n 1 nvidia-smi` to check that the GPU is used.
 
+(5. optional: To have a correct name for git commits set your name and email in the container: `git config --global user.name "Your Name"` and `git config --global user.email "your.email@example.com"`)
+
 ## Other container as base image
 In the `Dockerfile` you can adjust the base image to your needs. The base image should have CUDA Toolkit, NVIDIA cuDNN and JAX preinstalled.
 
