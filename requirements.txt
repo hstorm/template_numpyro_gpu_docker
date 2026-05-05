@@ -1,11 +1,12 @@
-ipywidgets==8.1.8
-numpyro==0.21.0
 arviz==1.1.0
-matplotlib==3.10.8
+gpjax==0.14.0
+numpyro==0.21.0
+ipywidgets==8.1.8
+matplotlib==3.10.9
 seaborn==0.13.2
-ipykernel==6.29.4
-pandas==2.2.3
+ipykernel==7.2.0
+pandas==3.0.2
 preliz==0.24.0
-# pyarrow==19.0.1
-# scikit-learn==1.8.0
-# gpjax==0.14.0
+pyarrow==24.0.0
+
+

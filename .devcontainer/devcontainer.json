@@ -13,7 +13,8 @@
 	// "runArgs": [ "--network=host" ],
 	"extensions": ["ms-python.python","njpwerner.autodocstring","ms-toolsai.jupyter",
 		"kevinrose.vsc-python-indent",
-		"streetsidesoftware.code-spell-checker"],
+		"streetsidesoftware.code-spell-checker",
+		"ms-python.autopep8"],
 	// "workspaceMount": null,
 	// "workspaceFolder": "/workspaces/nn_norway",
 	// "mounts": ["source= ${localWorkspaceFolder},target=/workspaces/nn_norway/,type=bind,consistency=cached"]
