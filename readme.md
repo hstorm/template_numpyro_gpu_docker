@@ -12,13 +12,18 @@ The repository allows to create VS Code development container starting from an d
 3. Open the project in VS Code and hit `Ctrl+Shift+P` and select `Dev Containers: Reopen in Container`.
 Note: For this to work you user needs to be in the docker user group (`sudo usermod -a -G docker USERNAME`)
 
+4. Test the installation by running `python src/test_numpyro.py` or `python src/test_gpjax_numpyro.py`. You should see that the code is running on GPU. For this connect to the server used SSH (without an development container) and run `watch -n 1 nvidia-smi` to check that the GPU is used.
+
 ## Other container as base image
+In the `Dockerfile` you can adjust the base image to your needs. The base image should have CUDA Toolkit, NVIDIA cuDNN and JAX preinstalled.
+
+
+Here `nvcr.io/nvidia/jax:26.04-py3` is used. This is provides jax==0.9.2, and works with numpyro==0.21.0 (and gpjax==0.14.0)
+
+For older numpyro versions a working base image is `nvcr.io/nvidia/jax:23.10-py3`. This works with numypro==0.14.0
+
 Choice other docker image 
 from https://docs.nvidia.com/deeplearning/frameworks/jax-release-notes/index.html
-
-Here `nvcr.io/nvidia/jax:23.10-py3` is used.
-
-This is based on jaxlib==0.4.17 and works with numypro Version 0.14.0
 
 ## Notes when using this without a GPU (e.g. when running a container locally on laptop)
 In this case adjust ```.devcontainer/devcontainer.json``` replacing line 
